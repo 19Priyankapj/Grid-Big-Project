@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/*bootstrap grid logic*/
+.col1 {width: 8.33%;}
+
+.col2 {width: 16.33%;}
+
+.col3 {width: 25%;}
+
+.col4 {width: 33.33%;}
+
+.col5 {width: 41.68%;}
+
+.col6 {width: 50%;}
+
+.col7 {width: 58.33%;}
+
+.col8 {width: 66.66%;}
+
+.col9 {width: 75%;}
+
+.col10 {width: 83.33%;}
+
+.col11 {width: 91.66%;}
+
+.col12 {width: 100%;}
+
+/*.collection{}*/
+[class*="col"]{
+    float: left;
+    padding: 10px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*margin and padding*/
+.mx-50 {margin: auto 50px;}
+
+.my-50 {margin: 50px auto;}
+
+.my-20 {margin: 20px auto;}
+
+.m-20 {margin: 50px;}
+
+.m-10 {margin: 30px;}
+
+.mt-50 {margin-top: 50px;}
+
+.px-50 {padding: auto 50px;}
+
+.py-50 {padding: 50px auto;}
+
+.p-50 {padding: 50px;}
+
+.px-20 {padding: auto 20px;}
+
+.py-20 {padding: 20px auto;}
+
+.p-20 {padding: 20px;}
+
+.p-10 {padding: 10px;}
+
+/*line height*/
+.ln-2 {line-height: 2;}
+
+/*colors*/
+.bg-blue {background-color: rgba(43, 43, 109, 0.712);}
+
+.bg-white {background-color: #fff;}
+
+.bg-grey {background-color: #f4f4f4;}
+
+.text-white {background-color: #fff;}
+
+.bg-pink {background-color: #ce3c55;}
+
+.bg-grey {background-color: rgba(165, 163, 163, 0.114);}
+
+.bg-white {background-color: #fff;}
+
+.text-yellow{color: #f8bf0d;}
+
+/*text alignment*/
+.text-right {text-align: right;}
+
+.text-left {text-align: left;}
+
+.text-center {text-align: center;}
+
+.text-justify {text-align: justify;}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+    background-color: rgba(20, 17, 65, 0.858);
+    position: sticky;
+    top: 0;
+    color: var(--white-color);
+    backdrop-filter: blur(30px);
+    padding: 20px 10px;
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li{
+    font-size: 1.3rem;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+nav ul li:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transform: translateX(-100%);
+    /* transform: scale(0); */
+    /* border-radius: 100px; */
+}
+nav ul li:hover::before{
+    transform: translateX(0);
+    transition: 0.8s;
+    /* transform: scale(1.1); */
+}
+nav ul li:hover{
+    color: orange;
+    transition: 1s;
+    cursor: pointer;
+}
+.desktop-banner{
+    color: #fff;
+    line-height: 1.5;
+    text-align: center  ;
+    transform: translateY(100%);
+}
+.fitness-club{
+    background: linear-gradient(45deg, rgba(23, 3, 58, 0.805),rgba(9, 9, 62, 0.723)),url(../images/gym2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+button{
+    color: #fff; 
+}
+button:hover{
+    color: #fff; 
+    background-color: #ce3c55;
+}
+.signup-news{
+    background: linear-gradient(45deg, rgba(23, 3, 58, 0.805),rgba(9, 9, 62, 0.723)),url(../images/gym.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+}
+.cards>.col4{
+    border: 2px solid #000;
+    width: 300px;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    margin-left: 80px;
+    
+}
+.our-prices{
+    background: linear-gradient(45deg, rgba(23, 3, 58, 0.805),rgba(9, 9, 62, 0.723)),url(../images/gym1.jpg);
+    color: #fff;
+
+    
+}
+.footer{
+    background: linear-gradient(45deg, rgba(23, 3, 58, 0.805),rgba(9, 9, 62, 0.723)),url(../images/gym1.jpg);
+    color: #fff;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
